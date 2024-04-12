@@ -27,7 +27,6 @@ Pod::Spec.new do |s|
     s.vendored_frameworks = 
         ["Firebase/FirebaseAnalytics/*.xcframework", 
         "Firebase/FirebasePerformance/*.xcframework",
-        "Firebase/FirebaseCrashlytics/FirebaseRemoteConfigInterop.xcframework",
         "Firebase/FirebaseCrashlytics/FirebaseCrashlytics.xcframework"]
 
 end
