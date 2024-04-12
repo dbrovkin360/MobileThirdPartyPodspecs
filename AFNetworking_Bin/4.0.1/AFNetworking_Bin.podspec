@@ -9,7 +9,7 @@ Pod::Spec.new do |s|
 
   s.ios.deployment_target = '9.0'
 
-  s.source   = { :http => 'https://github.com/dbrovkin360/MobileThirdPartyPodspecs/releases/download/24.4.0/AFNetworking.xcframework.zip' }
+  s.source   = { :http => 'https://github.com/life360/AFNetworking/releases/download/%s/AFNetworking.xcframework.zip' % [s.version] }
 
   s.swift_version           = '5.0'
   s.ios.deployment_target   = '11.0'
