@@ -1,5 +1,5 @@
 Pod::Spec.new do |s|
-  s.name     = 'CocoaLumberjack'
+  s.name     = 'CocoaLumberjack_Bin'
   s.version  = '3.8.1'
   s.license  = 'BSD'
   s.summary  = 'A fast & simple, yet powerful & flexible logging framework for macOS, iOS, tvOS and watchOS.'
