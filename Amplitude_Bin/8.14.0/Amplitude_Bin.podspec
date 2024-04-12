@@ -1,5 +1,5 @@
 Pod::Spec.new do |s|
-  s.name                   = "Amplitude"
+  s.name                   = "Amplitude_Bin"
   s.version                = "8.14.0" 
   s.summary                = "Amplitude iOS/tvOS/macOS SDK."
   s.homepage               = "https://amplitude.com"
