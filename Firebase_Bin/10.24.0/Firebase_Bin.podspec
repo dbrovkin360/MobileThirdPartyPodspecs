@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
     s.name             = 'Firebase_Bin'
-    s.version          = '10.22.0'
+    s.version          = '10.24.0'
     s.summary          = 'Firebase Analytics for iOS'
 
     s.description      = <<-DESC
