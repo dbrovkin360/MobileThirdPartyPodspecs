@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   s.author                    = { "Erik Doernenburg" => "erik@doernenburg.com" }
   s.ios.framework             = 'XCTest'
 
-  spec.source           = { :http => "https://github.com/erikdoe/ocmock/releases/download/v%s/OCMock.xcframework.zip" % [spec.version] }
+  s.source           = { :http => "https://github.com/erikdoe/ocmock/releases/download/v%s/OCMock.xcframework.zip" % [spec.version] }
 
-  spec.vendored_framework = "Carthage/Build/OCMock.xcframework"
+  s.vendored_framework = "Carthage/Build/OCMock.xcframework"
 end
