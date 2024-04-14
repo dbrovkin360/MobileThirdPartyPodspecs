@@ -12,31 +12,11 @@ Pod::Spec.new do |s|
 
   s.homepage                  = "http://ocmock.org"
   s.documentation_url         = "http://ocmock.org/reference/"
-  s.license                   = { :type => "Apache 2.0", :file => "License.txt" }
 
   s.author                    = { "Erik Doernenburg" => "erik@doernenburg.com" }
-  s.social_media_url          = "https://toot.thoughtworks.com/@edoernen"
-
-  s.source                    = { :git => "https://github.com/erikdoe/ocmock.git", :tag => "v3.9.3" }
-  s.source_files              = "Source/OCMock/*.{h,m}"
-
-  s.requires_arc              = false
-  s.osx.deployment_target     = '10.15'
-  s.ios.deployment_target     = '12.0'
-  s.tvos.deployment_target    = '12.0'
-  s.watchos.deployment_target = '7.0'
-  s.osx.framework             = 'XCTest'
   s.ios.framework             = 'XCTest'
-  s.tvos.framework            = 'XCTest'
-  s.watchos.framework         = 'XCTest'
 
-  s.pod_target_xcconfig       = { 'ENABLE_BITCODE' => 'NO' }
+  spec.source           = { :http => "https://github.com/erikdoe/ocmock/releases/download/v%s/OCMock.xcframework.zip" % [spec.version] }
 
-  s.public_header_files       = ["OCMock.h", "OCMockObject.h", "OCMArg.h", "OCMConstraint.h",
-                                 "OCMLocation.h", "OCMMacroState.h", "OCMRecorder.h",
-                                 "OCMStubRecorder.h", "NSNotificationCenter+OCMAdditions.h",
-                                 "OCMFunctions.h", "OCMVerifier.h", "OCMQuantifier.h",
-                                 "OCMockMacros.h"
-                                ]
-                                .map { |file| "Source/OCMock/" + file }
+  spec.vendored_framework = "Carthage/Build/OCMock.xcframework"
 end
