@@ -22,7 +22,7 @@ Pod::Spec.new do |ld|
   ld.ios.deployment_target     = "11.0"
   ld.swift_version = '5.0'
   
-  ld.source           = { :http => "https://github.com/life360/LaunchDarkly/releases/download/%s/LaunchDarkly.xcframework.zip" % [s.version] }
+  ld.source           = { :http => "https://github.com/life360/LaunchDarkly/releases/download/%s/LaunchDarkly.xcframework.zip" % [ld.version] }
 
   ld.vendored_framework = "LaunchDarkly.xcframework"
 
