@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name = 'IGListKit_Bin'
-  s.version = `3.4.1`
+  s.version = '3.4.1'
   s.summary = 'Diffing utilities for a data-driven UICollectionView framework.'
   s.homepage = 'https://github.com/Instagram/IGListKit'
   s.documentation_url = 'https://instagram.github.io/IGListKit'
