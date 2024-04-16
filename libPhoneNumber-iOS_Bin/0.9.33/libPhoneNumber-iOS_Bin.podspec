@@ -14,7 +14,7 @@ DESC
   s.ios.deployment_target = "12.0"
   s.source           = { :http => "https://github.com/life360/libPhoneNumber-iOS/releases/download/%s/libPhoneNumberiOS.xcframework.zip" % [s.version] }
 
-  s.vendored_framework = "libPhoneNumber-iOS.xcframework"
+  s.vendored_framework = "libPhoneNumberiOS.xcframework"
 
 
 end
