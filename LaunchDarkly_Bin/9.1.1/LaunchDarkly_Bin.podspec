@@ -20,11 +20,11 @@ Pod::Spec.new do |ld|
   ld.author       = { "LaunchDarkly" => "sdks@launchdarkly.com" }
 
   ld.ios.deployment_target     = "11.0"
-  ld.source_files = "LaunchDarkly/LaunchDarkly/**/*.{h,m,swift}"
   ld.swift_version = '5.0'
-    s.source           = { :http => "https://github.com/life360/LaunchDarkly/releases/download/%s/LaunchDarkly.xcframework.zip" % [s.version] }
+  
+  ld.source           = { :http => "https://github.com/life360/LaunchDarkly/releases/download/%s/LaunchDarkly.xcframework.zip" % [s.version] }
 
-  s.vendored_framework = "LaunchDarkly.xcframework"
+  ld.vendored_framework = "LaunchDarkly.xcframework"
 
 
 end
