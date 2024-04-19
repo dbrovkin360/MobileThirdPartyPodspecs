@@ -14,5 +14,5 @@ The PubNub Real-Time Network. Build real-time apps quickly and scale them global
 
   s.ios.deployment_target = '12.0'
   s.source = { :http => 'https://github.com/pubnub/swift/releases/download/%s/PubNub.xcframework.zip' % [s.version] }
-  s.vendored_framework = "PubNubSwift.xcframework"
+  s.vendored_framework = "PubNub.xcframework"
 end
