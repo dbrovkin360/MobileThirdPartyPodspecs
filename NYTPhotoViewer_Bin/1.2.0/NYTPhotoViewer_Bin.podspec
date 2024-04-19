@@ -20,6 +20,5 @@ Pod::Spec.new do |s|
   s.vendored_frameworks = ["NYTPhotoViewer.xcframework", "NYTPhotoViewerCore.xcframework"]
 
   s.dependency "FLAnimatedImage_Bin", "1.0.16"
-  s.dependency "OCMock_Bin", "3.9.1"
 
 end

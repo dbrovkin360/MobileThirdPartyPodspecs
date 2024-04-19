@@ -18,7 +18,6 @@ Pod::Spec.new do |s|
 
   s.library = 'c++'
   
-  s.dependency "OCMock_Bin", "3.9.1"
   s.vendored_framework = "IGListKit.xcframework"
   s.source = { :http => "https://github.com/life360/IGListKit/releases/download/%s/IGListKit.xcframework.zip" % [s.version]}
 
