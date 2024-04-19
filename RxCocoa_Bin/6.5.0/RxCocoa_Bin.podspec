@@ -20,4 +20,8 @@ Pod::Spec.new do |s|
 
   s.vendored_framework = 'RxCocoa.xcframework'
 
+  s.dependency 'RxSwift_Bin', '6.5.0'
+  s.dependency 'RxRelay_Bin', '6.5.0'
+
+
 end
