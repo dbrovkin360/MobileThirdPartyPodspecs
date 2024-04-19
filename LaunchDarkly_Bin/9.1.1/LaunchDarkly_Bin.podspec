@@ -1,11 +1,11 @@
 # coding: utf-8
-Pod::Spec.new do |ld|
+Pod::Spec.new do |s|
 
-  ld.name         = "LaunchDarkly_Bin"
-  ld.version      = "9.1.1"
-  ld.summary      = "iOS SDK for LaunchDarkly"
+  s.name         = "LaunchDarkly_Bin"
+  s.version      = "9.1.1"
+  s.summary      = "iOS SDK for LaunchDarkly"
 
-  ld.description  = <<-DESC
+  s.description  = <<-DESC
                    LaunchDarkly is the feature management platform that software teams use to build better software, faster. Development teams use feature management as a best practice to separate code deployments from feature releases. With LaunchDarkly teams control their entire feature lifecycles from concept to launch to value.
                    With LaunchDarkly, you can:
                    * Release a new feature to a subset of your users, like a group of users who opt-in to a beta tester group.
@@ -15,16 +15,16 @@ Pod::Spec.new do |ld|
                    * Disable parts of your application to facilitate maintenance, without taking everything offline.
                    DESC
 
-  ld.homepage     = "https://github.com/launchdarkly/ios-client-sdk"
+  s.homepage     = "https://github.com/launchdarkly/ios-client-sdk"
 
-  ld.author       = { "LaunchDarkly" => "sdks@launchdarkly.com" }
+  s.author       = { "LaunchDarkly" => "sdks@launchdarkly.com" }
 
-  ld.ios.deployment_target     = "11.0"
-  ld.swift_version = '5.0'
+  s.ios.deployment_target     = "11.0"
   
-  ld.source           = { :http => "https://github.com/life360/LaunchDarkly/releases/download/%s/LaunchDarkly.xcframework.zip" % [ld.version] }
+  s.source           = { :http => "https://github.com/life360/LaunchDarkly/releases/download/%s/LaunchDarkly.xcframework.zip" % [ld.version] }
 
-  ld.vendored_framework = "LaunchDarkly.xcframework"
+  s.vendored_framework = "LaunchDarkly.xcframework"
+  s.dependency = 'LDSwiftEventSource_Bin', '3.1.1'
 
 
 end
