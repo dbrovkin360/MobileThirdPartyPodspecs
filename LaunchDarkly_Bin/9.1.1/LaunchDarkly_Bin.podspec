@@ -21,7 +21,7 @@ Pod::Spec.new do |s|
 
   s.ios.deployment_target     = "11.0"
   
-  s.source           = { :http => "https://github.com/life360/LaunchDarkly/releases/download/%s/LaunchDarkly.xcframework.zip" % [ld.version] }
+  s.source           = { :http => "https://github.com/life360/LaunchDarkly/releases/download/%s/LaunchDarkly.xcframework.zip" % [s.version] }
 
   s.vendored_framework = "LaunchDarkly.xcframework"
   s.dependency = 'LDSwiftEventSource_Bin', '3.1.1'
