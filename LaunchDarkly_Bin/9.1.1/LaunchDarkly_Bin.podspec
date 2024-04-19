@@ -24,7 +24,7 @@ Pod::Spec.new do |s|
   s.source           = { :http => "https://github.com/life360/LaunchDarkly/releases/download/%s/LaunchDarkly.xcframework.zip" % [s.version] }
 
   s.vendored_framework = "LaunchDarkly.xcframework"
-  s.dependency = 'LDSwiftEventSource_Bin', '3.1.1'
+  s.dependency 'LDSwiftEventSource_Bin', '3.1.1'
 
 
 end
