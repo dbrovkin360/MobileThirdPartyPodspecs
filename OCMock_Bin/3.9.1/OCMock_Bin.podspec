@@ -14,7 +14,6 @@ Pod::Spec.new do |s|
   s.documentation_url         = "http://ocmock.org/reference/"
 
   s.author                    = { "Erik Doernenburg" => "erik@doernenburg.com" }
-  s.ios.framework             = 'XCTest'
 
   s.source           = { :http => "https://github.com/erikdoe/ocmock/releases/download/v%s/OCMock.xcframework.zip" % [s.version] }
 
