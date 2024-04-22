@@ -9,7 +9,7 @@ Pod::Spec.new do |s|
 
   s.swift_version = '4.1'
   
-  s.ios.deployment_target  = '10.0'
+  s.ios.deployment_target  = '12.0'
   s.source = { :http => 'https://github.com/life360/Amplitude-SDK-iOS/releases/download/%s/Amplitude.xcframework.zip' % [s.version]}
   
   s.vendored_frameworks = ['Amplitude.xcframework', 'AnalyticsConnector.xcframework']
